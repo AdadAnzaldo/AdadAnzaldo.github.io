@@ -1,6 +1,3 @@
-# AdadAnzaldo.github.io
-Portfolio of Adad Anzaldo — AI Engineer, Python Developer, and Technology Innovator.
-
 # Adad Anzaldo
 
 AI Engineer | Python Developer | Automation Specialist
