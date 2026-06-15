@@ -23,5 +23,5 @@ Welcome to my professional portfolio.
 
 ## Contact
 
-LinkedIn: (tu LinkedIn)
+LinkedIn:  linkedin.com/in/adad-anzaldo
 Email: adad.anzaldo@gmail.com
