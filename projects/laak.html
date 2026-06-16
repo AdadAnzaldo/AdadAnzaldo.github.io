@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Láak Chatbot</title>
+
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+</head>
+<a href="#top" class="back-to-top">
+
+    ↑
+
+</a>
+<body>
+<nav class="project-nav">
+
+    <div class="logo">
+
+        <a href="../index.html">
+            ← Portfolio
+        </a>
+
+    </div>
+
+    <ul>
+
+        <li><a href="#overview">Overview</a></li>
+
+        <li><a href="#architecture">Architecture</a></li>
+
+        <li><a href="#technologies">Technologies</a></li>
+
+        <li><a href="#testing">Testing</a></li>
+
+        <li><a href="#gallery">Gallery</a></li>
+
+        <li><a href="#demo">Demo</a></li>
+
+    </ul>
+
+</nav>
+<div id="top"></div>
+    <section class="project-hero">
+
+        <h1>Láak Chatbot</h1>
+
+        <p class="project-subtitle">
+            AI-powered onboarding assistant designed to improve
+            employee integration through personalized responses
+            and contextual knowledge retrieval.
+        </p>
+
+    </section>
+
+    <section id="overview" class="project-section">
+
+        <h2>Overview</h2>
+
+        <p>
+            Láak Chatbot is an intelligent assistant developed as
+            the final project of my Master's Degree in Artificial
+            Intelligence. The system was designed to guide new
+            employees during onboarding processes by providing
+            personalized responses based on an internal
+            organizational knowledge base.
+        </p>
+
+    </section>
+
+    <section  class="project-section">
+
+        <h2>Technology & Functionality 💻</h2>
+
+        <p>
+            The chatbot was implemented as a locally hosted web
+            application, providing a secure and controlled
+            environment for organizational use.
+        </p>
+
+        <p>
+            One of its most innovative capabilities is the use of
+            an internal knowledge database that enriches the
+            language model context, allowing responses to be
+            aligned with company culture, procedures, and
+            onboarding requirements.
+        </p>
+
+        <p>
+            Users can dynamically switch between multiple language
+            models such as Ollama 3.2 and Qwen, enabling
+            performance comparisons and adaptation to different
+            use cases.
+        </p>
+
+</section>
+
+    <section class="project-section">
+
+        <h2>Key Achievements 🏆</h2>
+
+        <div class="achievement-grid">
+
+            <div class="achievement-card">
+                <h3>Advanced Customization</h3>
+                <p>
+                    Personalized responses based on an internal
+                    organizational database.
+                </p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>Flexible Architecture</h3>
+                <p>
+                    Support for multiple LLM providers including
+                    Ollama and Qwen.
+                </p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>Model Evaluation</h3>
+                <p>
+                    Structured comparison of language model
+                    performance and quality.
+                </p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>Improved Onboarding</h3>
+                <p>
+                    Reduced training effort and accelerated
+                    employee integration.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="architecture" class="project-section">
+
+    <h2>Architecture</h2>
+         <p>
+            Láak Chatbot was designed using a modular architecture that separates the user interface, 
+            business logic, language model orchestration, and organizational knowledge base.
+            <br>
+            This approach allows the system to remain scalable, maintainable,
+            and adaptable to different language models while providing contextualized responses based on internal company information.
+        </p>
+        <div class="architecture-container">
+
+            <img
+                src="../assets/images/laak-architecture.png"
+                alt="Láak Architecture">
+
+        </div>
+        <p class="architecture-caption">
+            High-level architecture showing the interaction between
+            the frontend, Flask API, LangChain orchestration layer,
+            internal knowledge base, and supported language models.
+        </p>
+
+</section>
+
+<section id="technologies" class="project-section">
+
+    <h2>Technologies Used ✅</h2>
+
+    <div class="tech-stack">
+
+        <span>Python</span>
+        <span>Docker</span>
+        <span>React</span>
+        <span>CSS</span>
+        <span>Flask</span>
+        <span>Flask-CORS</span>
+        <span>LangChain</span>
+        <span>Ollama</span>
+        <span>Qwen</span>
+        <span>dotenv</span>
+
+    </div>
+
+</section>
+
+<section id="testing" class="project-section">
+
+    <h2>Testing & Evaluation 🧪</h2>
+
+    <p>
+        To evaluate language model quality and reliability,
+        DeepEval was used to perform systematic testing.
+    </p>
+
+    <ul>
+        <li>Answer Relevancy Metric</li>
+        <li>Faithfulness Metric</li>
+        <li>Contextual Precision Metric</li>
+        <li>Contextual Recall Metric</li>
+        <li>Contextual Relevancy Metric</li>
+        <li>Hallucination Metric</li>
+    </ul>
+
+</section>
+<section id="gallery" class="project-section">
+
+    <h2>Chatbot Gallery</h2>
+
+    <div class="gallery">
+
+        <img src="../assets/images/laak-1.png">
+        <img src="../assets/images/laak-2.png">
+        <img src="../assets/images/laak-3.png">
+
+    </div>
+
+</section>
+<section id="demo" class="project-section">
+
+    <h2>Project Video 📹</h2>
+
+    <div class="video-container">
+
+        <iframe
+            src="https://www.youtube.com/embed/8-kUlg11ENw?si=j_bShMCn45Wy_VCW"
+            title="Láak Demo Presentation"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</section>
