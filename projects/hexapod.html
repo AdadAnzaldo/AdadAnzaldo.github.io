@@ -49,21 +49,24 @@
     <div class="project-hero-text">
 
         
-        <h1>Fuzzy control of a Hexapod Robot with feedback from computer vision for crop pest analysis</h1>
+        <h1>Bio-Inspired Robotics for Agricultural Monitoring</h1>
         <p class="project-subtitle">
 
-            Láak Chatbot is an intelligent assistant developed as
-            the final project of my Master's Degree in Artificial
-            Intelligence. The system was designed to guide new
-            employees during onboarding processes by providing
-            personalized responses based on an internal
-            organizational knowledge base.
+           Developed as my Bionic Engineering thesis, this project explores how nature-inspired locomotion, intelligent control systems,
+            and computer vision can be combined into a single autonomous robotic platform.<br><br>
+
+           The resulting hexapod robot was designed to traverse irregular terrain while perceiving and reacting to its environment,
+           demonstrating the potential of bio-inspired robotics for next-generation agricultural inspection and monitoring tasks.<br><br>
+
+            This work combines mechanical design, embedded systems, fuzzy control, computer vision, 
+            and autonomous navigation into a fully integrated robotic solution.<br>
 
         </p>
 
         <div class="project-tags">
 
                     <span>Python</span>
+                    <span>Robotics</span>
                     <span>Artificial Vision</span>
                     <span>YOLO</span>
                     <span>Robot System</span>
@@ -79,13 +82,11 @@
 
         <img
             src="../assets/images/hexapod-hero.png"
-            alt="Láak Chatbot">
+            alt="Hexapod Robot">
 
             <div class="hero-image-caption">
 
-                Conceptual illustration
-                showcasing AI-powered onboarding, knowledge retrieval,
-                and multi-LLM integration.
+                Prototype of the bio-inspired hexapod robot
 
             </div>
 
@@ -102,48 +103,61 @@
 
             <div class="impact-card">
 
-                <h3>Advanced Customization</h3>
+                <h3>Bio-Inspired Locomotion</h3>
 
                 <p>
-                    Personalized responses based on an internal
-                    organizational database.
+                    Designed and implemented a six-legged locomotion system
+                    inspired by ant movement, enabling stable traversal of
+                    irregular terrain.
                 </p>
 
             </div>
 
             <div class="impact-card">
 
-                <h3>Flexible Architecture</h3>
+                <h3>Fuzzy Logic Control</h3>
 
                 <p>
-                    Support for multiple LLM providers including
-                    Ollama and Qwen.
+                    Developed an adaptive fuzzy controller capable of
+                    adjusting robot behavior based on visual feedback
+                    and environmental conditions.
                 </p>
 
             </div>
 
             <div class="impact-card">
 
-                <h3>Model Evaluation</h3>
+                <h3>Computer Vision Integration</h3>
 
                 <p>
-                    Structured comparison of language model
-                    performance and quality.
+                    Integrated stereoscopic vision for target detection,
+                    environmental perception, and autonomous navigation
+                    assistance.
                 </p>
 
             </div>
 
             <div class="impact-card">
 
-                <h3>Improved Onboarding</h3>
+                <h3>Complete Robotic Platform on ROS</h3>
 
                 <p>
-                    Reduced training effort and accelerated
-                    employee integration.
+                    Combined mechanical design, embedded electronics,
+                    intelligent control, and software development into
+                    a fully functional ROS system.
                 </p>
 
             </div>
 
+            <div class="impact-card">
+
+                <h3>Autonomous Navigation</h3>
+                <p>
+                    Visual feedback and intelligent control enabled the robot
+                    to react to environmental conditions in real time.
+                </p>
+
+            </div>
 
         </div>
 
@@ -151,7 +165,7 @@
 
     <section id="technologies" class="project-section">
         
-                <h2>Technology & Functionality</h2>
+                <h2>Technologies Core Components</h2>
                 
          <div class="tech-overview">
             
@@ -161,37 +175,40 @@
 
                 <p>
 
-                    Láak Chatbot was developed as a locally hosted AI assistant designed to improve employee onboarding 
-                    and knowledge accessibility within an organization.
+                    The hexapod robot was conceived as a bio-inspired robotic platform capable of traversing 
+                    irregular terrain while collecting visual information for agricultural inspection tasks.
                 </p>
 
                 <p>
-                    The platform combines large language models with an internal knowledge repository,
-                    enabling the assistant to generate responses that are aligned with company-specific procedures,
-                    documentation, and organizational context. This approach allows employees to obtain relevant information 
-                    quickly while maintaining consistency with internal processes.
+                    The locomotion system was developed from the study of real ant gait patterns, allowing the robot to 
+                    reproduce stable walking behaviors through coordinated control of eighteen degrees of freedom. 
+                    Kinematic analysis and gait generation algorithms were used to achieve 
+                    smooth and reliable movement across complex environments.
                 </p>
 
-                <p>A key feature of the platform is its support for multiple language models, including Ollama 3.2 and Qwen. 
-                    Users can dynamically switch between models, enabling performance comparisons and adaptation to different 
-                    use cases depending on response quality, speed, and contextual understanding.
+                <p>To support autonomous operation, the platform integrates fuzzy logic control and stereoscopic computer vision. 
+                    Visual feedback enables the robot to perceive its 
+                    surroundings and adapt its behavior, while fuzzy inference provides robust decision-making 
+                    in situations where traditional mathematical models are difficult to define.
                 </p>
 
-                <p>By integrating retrieval-based knowledge enrichment with modern language models, 
-                    Láak provides a practical solution for reducing onboarding time, improving information accessibility, 
-                    and supporting knowledge sharing across teams.
+                <p>The complete system was modeled and validated in ROS and Gazebo 
+                    before deployment on the physical platform, enabling simulation, 
+                    testing, and iterative refinement of locomotion and navigation behaviors.
                 </p>
             </div>
 
              <div class="tech-overview-image">
 
                 <img
-                    src="../assets/images/laak-workflow.png"
-                    alt="Láak workflow">
+                    src="../assets/images/hexapod-workflow2.png"
+                    alt="Hexapod workflow">
 
                 <p class="hero-image-caption">
 
-                    Conceptual workflow illustrating 
+                     <p class="hero-image-caption">
+                            End-to-end development workflow from biological inspiration to autonomous robotic operation.
+                        </p>
 
                 </p>
 
@@ -202,12 +219,14 @@
 
             <div class="tech-card">
 
-                <h3>Frontend</h3>
-                <p>User-facing interface and interaction layer.</p><br>
+                <h3>Biological Inspiration</h3>
+                <p>Study of ant locomotion patterns to design stable and efficient walking behaviors.</p><br>
                 <div class="tech-tags">
 
-                    <span>React</span>
-                    <span>CSS</span>
+                    <span>Kinovea</span>
+                    <span>Motion Analysis</span>
+                    <span>Biomimetics</span>
+                    <span>Gait Study</span>
 
                 </div>
 
@@ -215,14 +234,14 @@
 
             <div class="tech-card">
 
-                <h3>Backend</h3>
-                <p>API services and business logic.</p><br>
+                <h3>Kinematics</h3>
+                <p>Mathematical modeling of leg movement and trajectory generation for coordinated locomotion.</p><br>
                 <div class="tech-tags">
 
+                    <span>Inverse Kinematics</span>
+                    <span>Forward Kinematics</span>
                     <span>Python</span>
-                    <span>Flask</span>
-                    <span>Flask-CORS</span>
-                    <span>dotenv</span>
+                    <span>Trajectory Planning</span>
 
                 </div>
 
@@ -230,13 +249,14 @@
 
             <div class="tech-card">
 
-                <h3>AI & LLM</h3>
-                <p>Model orchestration and knowledge retrieval.</p><br>
+                <h3>Simulation & Validation</h3>
+                <p>Virtual testing environment used to validate locomotion and control strategies before deployment.</p><br>
                 <div class="tech-tags">
 
-                    <span>LangChain</span>
-                    <span>Ollama</span>
-                    <span>Qwen</span>
+                    <span>ROS</span>
+                    <span>Gazebo</span>
+                    <span>RViz</span>
+                    <span>URDF</span>
 
                 </div>
 
@@ -244,11 +264,14 @@
 
             <div class="tech-card">
 
-                <h3>Infrastructure</h3>
-                <p>Containerized environment ensuring portability, scalability, and deployment consistency.</p><br>
+                <h3>Control</h3>
+                <p>Adaptive decision-making system based on fuzzy logic and real-time sensory feedback.</p><br>
                 <div class="tech-tags">
 
-                    <span>Docker</span>
+                    <span>Fuzzy Logic</span>
+                    <span>Mamdani</span>
+                    <span>Control Systems</span>
+                    <span>MATLAB</span>
 
                 </div>
 
@@ -256,11 +279,14 @@
 
             <div class="tech-card">
 
-                <h3>Testing</h3>
-                <p>Systematic evaluation of language model performance using specialized LLM metrics.</p><br>
+                <h3>Computer Vision</h3>
+                <p>Visual perception subsystem for target detection, localization, and environmental awareness.</p><br>
                 <div class="tech-tags">
 
-                    <span>DeepEval</span>
+                    <span>Intel RealSense</span>
+                    <span>OpenCV</span>
+                    <span>Depth Vision</span>
+                    <span>Object Detection</span>
 
                 </div>
 
@@ -279,14 +305,13 @@
             <div class="architecture-image">
 
                 <img
-                    src="../assets/images/laak-architecture.png"
-                    alt="Láak Architecture">
+                    src="../assets/images/hexapod-architecture.png"
+                    alt="Hexapod Architecture">
 
                 <p class="hero-image-caption">
 
                     High-level architecture showing the interaction between
-                    the frontend, Flask API, LangChain orchestration layer,
-                    internal knowledge base, and  models.
+                    the all modular systems.
 
                 </p>
 
@@ -297,24 +322,24 @@
                
 
                 <p>
-                    Láak Chatbot was designed using a modular architecture that
-                    separates the user interface, application services, language
-                    model orchestration, and organizational knowledge repository.
+                        The hexapod robot was designed using a modular architecture
+                        that combines perception, intelligent control, locomotion
+                        planning, and actuation into a unified robotic system.
                 </p>
 
                 <p>
-                    Each user request is enriched with relevant contextual
-                    information retrieved from the internal knowledge base before
-                    being processed by the selected language model. This approach
-                    improves response relevance while ensuring alignment with
-                    company-specific procedures and documentation.
+                        Visual information acquired through the stereoscopic camera
+                        is processed to identify targets and estimate environmental
+                        conditions. This information is then used by the fuzzy
+                        controller to generate adaptive navigation decisions.
                 </p>
 
                 <p>
-                    By decoupling the frontend, backend, retrieval layer, and
-                    language models, the platform remains scalable, maintainable,
-                    and flexible enough to support future integrations and model
-                    experimentation.
+                        Locomotion commands are translated into coordinated leg
+                        trajectories through kinematic models, allowing the robot
+                        to maintain stability while traversing uneven terrain.
+                        The complete architecture was validated in ROS and Gazebo
+                        before deployment on the physical platform.
                 </p>
 
             </div>
@@ -333,24 +358,21 @@
         <div class="testing-text">
 
             <p>
-                To ensure response quality and reliability, the platform
-                was evaluated using DeepEval, a specialized framework for
-                testing large language model applications.
+                The development process involved extensive validation 
+                at both the simulation and physical prototype levels to 
+                ensure reliable locomotion, navigation, and environmental perception.
             </p><br>
 
             <p>
-                The evaluation process focused on answer relevance,
-                factual consistency, contextual accuracy, and hallucination
-                detection. These metrics provided objective insights into
-                model behavior and enabled systematic comparison between
-                different language models.
+                Before deployment on the real robot, gait generation algorithms, inverse kinematics, 
+                and control strategies were tested in ROS and Gazebo, allowing rapid iteration and risk-free experimentation.
+
             </p><br>
 
             <p>
-                The evaluation process provided quantitative evidence of
-                model performance, enabling informed decisions regarding
-                model selection, response quality, and knowledge retrieval
-                effectiveness.
+           
+                The final platform was evaluated through locomotion tests, target tracking scenarios, and computer vision experiments, 
+                demonstrating the feasibility of combining bio-inspired robotics, fuzzy control, and visual feedback for autonomous agricultural inspection.
             </p>
 
         </div>
@@ -358,12 +380,13 @@
         <div class="testing-image">
 
             <img
-                src="../assets/images/deepeval.gif"
-                alt="DeepEval Metrics">
+                src="../assets/images/hexapod-test.png"
+                alt="Test Hexapod">
 
             <p class="hero-image-caption">
 
-                DeepEval evaluation workflow and metric reporting.
+                Validation workflow spanning simulation, visualization,
+                    and physical testing environments.
 
             </p>
 
@@ -375,60 +398,61 @@
 
         <div class="metric-card">
 
-            <h3>Answer Relevancy</h3>
+            <h3>Locomotion Validation</h3>
 
             <p>
-                Measures how well responses address the user's query.
+            Stable walking behavior verified through tripod gait
+            experiments and coordinated control of 18 degrees of freedom.
             </p>
 
         </div>
 
         <div class="metric-card">
 
-            <h3>Faithfulness</h3>
+            <h3>Simulation Testing</h3>
 
             <p>
-                Verifies that responses remain grounded in the provided context.
+            Motion planning and control strategies validated in ROS and Gazebo before physical deployment.
             </p>
 
         </div>
 
         <div class="metric-card">
 
-            <h3>Contextual Precision</h3>
+            <h3>Visual Tracking</h3>
 
             <p>
-                Evaluates whether retrieved information is relevant and useful.
+            Computer vision subsystem evaluated for target detection and localization using stereoscopic imaging.
             </p>
 
         </div>
 
         <div class="metric-card">
 
-            <h3>Contextual Recall</h3>
+            <h3>Adaptive Navigation</h3>
 
             <p>
-                Measures how effectively relevant knowledge is retrieved.
+            Fuzzy control algorithms tested under varying environmental conditions and target positions.
             </p>
 
         </div>
 
         <div class="metric-card">
 
-            <h3>Contextual Relevancy</h3>
+            <h3>Kinematic Accuracy</h3>
 
             <p>
-                Assesses the relationship between retrieved context and responses.
+            Inverse kinematics models validated through simulation and physical trajectory execution.
             </p>
 
         </div>
 
         <div class="metric-card">
 
-            <h3>Hallucination</h3>
+            <h3>System Integration</h3>
 
             <p>
-                Detects unsupported or fabricated information generated by the model.
+            Successful integration of mechanics, electronics, control systems, and computer vision into a unified platform.
             </p>
 
         </div>
@@ -439,35 +463,40 @@
 
 <section id="gallery" class="project-section">
 
-    <h2>Chatbot Gallery</h2>
+    <h2>Hexapod Robot Gallery</h2>
 
     <p class="section-description">
-        Screenshots showcasing the user interface, conversational experience,
-        and organizational knowledge retrieval capabilities of Láak Chatbot.
+        Visual journey through the development of the hexapod robot, 
+        from biological locomotion analysis and simulation environments 
+        to the final physical prototype.
     </p>
 
     <div class="gallery-grid">
 
         <div class="gallery-item">
-
+            
             <img
-                src="../assets/images/laak-1.png"
+                src="../assets/images/hexapod-gif.gif"
                 alt="Láak Home Screen">
 
-            <p>
-                Main chatbot interface with contextual responses.
-            </p>
+                <p>
+                Final hexapod prototype executing bio-inspired locomotion through the
+                integration of mechanics, electronics, control systems, and computer vision.
+                </p>
 
         </div>
 
         <div class="gallery-item">
 
             <img
-                src="../assets/images/laak-2.png"
+                src="../assets/images/hexapod-1.png"
                 alt="Knowledge Retrieval">
 
             <p>
-                Test Internal endpoints.
+                
+                Testing and refining navigation, perception, and locomotion behaviors
+                within ROS and Gazebo before physical deployment.
+               
             </p>
 
         </div>
@@ -475,11 +504,12 @@
         <div class="gallery-item">
 
             <img
-                src="../assets/images/laak-3.png"
+                src="../assets/images/hexapod-2.png"
                 alt="Model Selection">
 
             <p>
-                Results test evaluation.
+            Extracting locomotion patterns from real ants to translate biological
+            movement principles into robotic gait generation strategies.
             </p>
 
         </div>
@@ -490,17 +520,17 @@
 
 <section id="demo" class="project-section">
 
-    <h2>Project Video 📹</h2>
+    <h2>Project Video</h2>
 
     <div class="video-container">
 
-        <iframe
-            src="https://www.youtube.com/embed/8-kUlg11ENw?si=j_bShMCn45Wy_VCW"
-            title="Láak Demo Presentation"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
-        </iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CqSMDDMiWd0?si=mZZpMixMrZYo99dn" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe>
 
     </div>
 
