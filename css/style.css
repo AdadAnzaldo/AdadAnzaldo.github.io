@@ -547,6 +547,242 @@ section h2 {
 
     font-weight: 500;
 }
+
+.tech-overview {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 60px;
+
+    margin-top: 40px;
+}
+
+.tech-overview-text {
+
+    flex: 0.8;
+}
+
+.tech-overview-text p {
+
+    margin-bottom: 20px;
+
+    line-height: 1.8;
+
+    color: #cbd5e1;
+}
+
+.tech-overview-image {
+
+    flex: 1.2;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.tech-overview-image img {
+
+    width: 100%;
+
+    max-width: 650px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.35);
+}
+
+
+.architecture-layout {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 60px;
+
+    margin-top: 40px;
+}
+
+.architecture-image {
+
+    flex: 7;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.architecture-text {
+
+    flex: 3;
+}
+
+.architecture-text p {
+
+    margin-bottom: 20px;
+
+    line-height: 1.8;
+
+    color: #cbd5e1;
+}
+
+.architecture-image img {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.35);
+}
+
+.metrics-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+
+    margin-top: 40px;
+}
+
+.metric-card {
+
+    background: #1e293b;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    transition: .3s;
+}
+
+.metric-card:hover {
+
+    transform: translateY(-5px);
+}
+
+.metric-card h3 {
+
+    color: #60a5fa;
+
+    margin-bottom: 15px;
+}
+
+.metric-card p {
+
+    color: #cbd5e1;
+
+    line-height: 1.7;
+}
+
+.testing-layout {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 60px;
+
+    margin-top: 40px;
+}
+
+.testing-text {
+
+    flex: 4;
+}
+
+.testing-image {
+
+    flex: 6;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+.testing-image img {
+
+    width: 100%;
+
+    max-width: 750px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.35);
+}
+
+.gallery-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+    gap: 30px;
+
+    margin-top: 50px;
+}
+
+.gallery-item {
+
+    background: #1e293b;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: .3s;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.25);
+}
+
+.gallery-item:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.35);
+}
+
+.gallery-item img {
+
+    width: 100%;
+
+    display: block;
+
+    transition: .3s;
+}
+
+.gallery-item:hover img {
+
+    transform: scale(1.03);
+}
+
+.gallery-item p {
+
+    padding: 20px;
+
+    color: #cbd5e1;
+
+    line-height: 1.6;
+
+    font-size: .95rem;
+}
 /* ==========================
    EXPERIENCE
 ========================== */
