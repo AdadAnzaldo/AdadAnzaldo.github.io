@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fleet Vehicle Management Platform</title>
+
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+</head>
+<a href="#top" class="back-to-top">
+
+    ↑
+
+</a>
+<body>
+<nav class="project-nav">
+
+    <div class="logo">
+
+        <a href="../index.html">
+            ← Portfolio
+        </a>
+
+    </div>
+
+    <ul>
+        <li><a href="#technologies">Technologies</a></li>
+
+        <li><a href="#architecture">Architecture</a></li>
+
+        <li><a href="#testing">Testing</a></li>
+
+        <li><a href="#gallery">Gallery</a></li>
+
+        <li><a href="#demo">Demo</a></li>
+
+    </ul>
+
+</nav>
+<div id="top"></div>
+    <section class="project-hero">
+
+    <div class="project-hero-text">
+
+        <h1>Fleet Vehicle Management Platform</h1>
+
+        <p class="project-subtitle">
+
+            A digital platform designed to streamline vehicle registration
+            and administrative processes for companies managing large vehicle fleets.<br>
+
+            The solution combines a public-facing service portal with an internal
+            workflow management system, allowing organizations to track the status
+            of their vehicle-related procedures in real time.<br>
+
+            By simply entering their company tax identifier (RFC), fleet managers
+            can access the current status of active requests, reducing manual
+            communication and improving operational visibility.<br>
+
+            To support internal operations, a custom Python application was
+            developed to synchronize and update records through Excel-based
+            workflows, enabling efficient management of large volumes of requests.<br>
+
+        </p>
+
+        <div class="project-tags">
+
+        <span >Python</span>
+        <span>Docker</span>
+        <span>React</span>
+        <span>CSS</span>
+        <span>Flask</span>
+        <span>Flask-CORS</span>
+        <span>LangChain</span>
+        <span>Ollama</span>
+        <span>Qwen</span>
+        <span>dotenv</span>
+
+        </div>
+
+    </div>
+
+    <div class="project-hero-image">
+
+        <img
+            src="../assets/images/laak-hero.png"
+            alt="Láak Chatbot">
+
+            <div class="hero-image-caption">
+
+                Conceptual illustration
+                showcasing AI-powered onboarding, knowledge retrieval,
+                and multi-LLM integration.
+
+            </div>
+
+
+    </div>
+
+</section>
+
+    <section class="project-section">
+
+        <h2>Key Achievements</h2>
+
+        <div class="impact-grid">
+
+            <div class="impact-card">
+
+                <h3>Fleet Visibility</h3>
+
+                <p>
+                    Enabled companies to track vehicle-related procedures using their RFC, 
+                    providing real-time visibility into ongoing requests.
+                </p>
+
+            </div>
+
+            <div class="impact-card">
+
+                <h3>Workflow Automation</h3>
+
+                <p>
+                     Centralized process updates and reduced manual 
+                     administrative effort through bulk data synchronization.
+                </p>
+
+            </div>
+
+            <div class="impact-card">
+
+                <h3>Cloud-Based Architecture</h3>
+
+                <p>
+                    Implemented a scalable cloud database to maintain service history, 
+                    comments, statuses, and operational records.
+                </p>
+
+            </div>
+
+            <div class="impact-card">
+
+                <h3>Operational Efficiency</h3>
+
+                <p>
+                    Improved communication between administrators and fleet
+                    managers by providing self-service status tracking.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section id="technologies" class="project-section">
+        
+                <h2>Technology & Functionality</h2>
+                
+         <div class="tech-overview">
+            
+             <div class="tech-overview-text">
+
+                
+
+                <p>
+
+                   The Fleet Management Platform was developed to simplify the administration and 
+                   tracking of vehicle-related procedures for organizations managing large fleets.
+                </p>
+
+                <p>
+                    The solution combines a public-facing web portal with a centralized cloud database,
+                     allowing fleet managers to monitor the status of active procedures through an RFC-based lookup system. 
+                     This approach provides real-time visibility into ongoing requests while reducing the need for manual follow-up 
+                     communication between clients and administrative personnel.
+                </p>
+
+                <p>To support internal operations, the platform incorporates a workflow management system that stores procedure details, 
+                    status updates, comments, and historical records in a centralized repository. This enables administrators to maintain 
+                    accurate and up-to-date information throughout the lifecycle of each request.
+                </p>
+
+                <p>A custom Python application was also developed to streamline large-scale data management. Through structured Excel imports,
+                     administrators can efficiently update multiple procedures at once, ensuring consistency across records while significantly 
+                     reducing manual data entry.
+                </p>
+
+                <p>By combining cloud-based data management, workflow automation, and self-service tracking capabilities, the platform improves
+                    operational efficiency, enhances transparency for fleet managers, and modernizes the administration of vehicle registration services.
+                </p>
+
+            </div>
+
+             <div class="tech-overview-image">
+
+                <img
+                    src="../assets/images/laak-workflow.png"
+                    alt="Láak workflow">
+
+                <p class="hero-image-caption">
+
+                    Conceptual workflow illustrating 
+
+                </p>
+
+            </div>
+         </div>
+            
+        <div class="tech-grid">
+
+            <div class="tech-card">
+
+                <h3>Customer Portal</h3>
+                <p>Public-facing website that allows fleet managers to access service information and 
+                    track active vehicle procedures using their company's RFC.</p><br>
+                <div class="tech-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Responsive Design</span>
+                </div>
+
+            </div>
+
+            <div class="tech-card">
+
+                <h3>Fleet Tracking</h3>
+                <p>Self-service tracking system that provides real-time visibility 
+                    into procedure status, updates, comments, and processing stages.</p><br>
+                <div class="tech-tags">
+
+                    <span>RFC Lookup</span>
+                    <span>Status Tracking</span>
+                    <span>Workflow Management</span>
+                    <span>Client Portal</span>
+
+                </div>
+
+            </div>
+
+            <div class="tech-card">
+
+                <h3>Cloud Database</h3>
+                <p>Centralized repository used to store procedures, update history, 
+                    customer information, comments, and operational records.</p><br>
+                <div class="tech-tags">
+
+                    <span>Supabase</span>
+                    <span>PostgreSQL</span>
+                    <span>Cloud Storage</span>
+                    <span>REST API</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="tech-card">
+
+                <h3>Administrative Tool</h3>
+                <p>Custom application developed to simplify administrative
+                     operations and bulk updates of vehicle procedures.</p><br>
+                <div class="tech-tags">
+
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>CRUD Operations</span>
+                    <span>Data Management</span>
+
+                </div>
+
+            </div>
+
+            <div class="tech-card">
+
+                <h3>Data Automation</h3>
+                <p>Excel-based workflow designed to update multiple records simultaneously while
+                     maintaining data consistency across the platform.C</p><br>
+                <div class="tech-tags">
+
+                    <span>Excel</span>
+                    <span>openpyxl</span>
+                    <span>Bulk Updates</span>
+                    <span>Data Validation</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section id="architecture" class="project-section">
+         <h2>Architecture</h2>
+
+        <div class="architecture-layout">
+
+            <div class="architecture-image">
+
+                <img
+                    src="../assets/images/laak-architecture.png"
+                    alt="Láak Architecture">
+
+                <p class="hero-image-caption">
+
+                    High-level architecture showing the interaction between
+                    the frontend, Flask API, LangChain orchestration layer,
+                    internal knowledge base, and  models.
+
+                </p>
+
+            </div>
+
+            <div class="architecture-text">
+
+               
+
+                <p>
+                    Láak Chatbot was designed using a modular architecture that
+                    separates the user interface, application services, language
+                    model orchestration, and organizational knowledge repository.
+                </p>
+
+                <p>
+                    Each user request is enriched with relevant contextual
+                    information retrieved from the internal knowledge base before
+                    being processed by the selected language model. This approach
+                    improves response relevance while ensuring alignment with
+                    company-specific procedures and documentation.
+                </p>
+
+                <p>
+                    By decoupling the frontend, backend, retrieval layer, and
+                    language models, the platform remains scalable, maintainable,
+                    and flexible enough to support future integrations and model
+                    experimentation.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+<section id="testing" class="project-section">
+
+    <h2>Testing & Evaluation</h2>
+
+    <div class="testing-layout">
+
+        <div class="testing-text">
+
+            <p>
+                To ensure response quality and reliability, the platform
+                was evaluated using DeepEval, a specialized framework for
+                testing large language model applications.
+            </p><br>
+
+            <p>
+                The evaluation process focused on answer relevance,
+                factual consistency, contextual accuracy, and hallucination
+                detection. These metrics provided objective insights into
+                model behavior and enabled systematic comparison between
+                different language models.
+            </p><br>
+
+            <p>
+                The evaluation process provided quantitative evidence of
+                model performance, enabling informed decisions regarding
+                model selection, response quality, and knowledge retrieval
+                effectiveness.
+            </p>
+
+        </div>
+
+        <div class="testing-image">
+
+            <img
+                src="../assets/images/deepeval.gif"
+                alt="DeepEval Metrics">
+
+            <p class="hero-image-caption">
+
+                DeepEval evaluation workflow and metric reporting.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="metrics-grid">
+
+        <div class="metric-card">
+
+            <h3>Answer Relevancy</h3>
+
+            <p>
+                Measures how well responses address the user's query.
+            </p>
+
+        </div>
+
+        <div class="metric-card">
+
+            <h3>Faithfulness</h3>
+
+            <p>
+                Verifies that responses remain grounded in the provided context.
+            </p>
+
+        </div>
+
+        <div class="metric-card">
+
+            <h3>Contextual Precision</h3>
+
+            <p>
+                Evaluates whether retrieved information is relevant and useful.
+            </p>
+
+        </div>
+
+        <div class="metric-card">
+
+            <h3>Contextual Recall</h3>
+
+            <p>
+                Measures how effectively relevant knowledge is retrieved.
+            </p>
+
+        </div>
+
+        <div class="metric-card">
+
+            <h3>Contextual Relevancy</h3>
+
+            <p>
+                Assesses the relationship between retrieved context and responses.
+            </p>
+
+        </div>
+
+        <div class="metric-card">
+
+            <h3>Hallucination</h3>
+
+            <p>
+                Detects unsupported or fabricated information generated by the model.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="gallery" class="project-section">
+
+    <h2>Chatbot Gallery</h2>
+
+    <p class="section-description">
+        Screenshots showcasing the user interface, conversational experience,
+        and organizational knowledge retrieval capabilities of Láak Chatbot.
+    </p>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+
+            <img
+                src="../assets/images/laak-1.png"
+                alt="Láak Home Screen">
+
+            <p>
+                Main chatbot interface with contextual responses.
+            </p>
+
+        </div>
+
+        <div class="gallery-item">
+
+            <img
+                src="../assets/images/laak-2.png"
+                alt="Knowledge Retrieval">
+
+            <p>
+                Test Internal endpoints.
+            </p>
+
+        </div>
+
+        <div class="gallery-item">
+
+            <img
+                src="../assets/images/laak-3.png"
+                alt="Model Selection">
+
+            <p>
+                Results test evaluation.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="demo" class="project-section">
+
+    <h2>Project Video</h2>
+
+    <div class="video-container">
+
+        <iframe
+            src="https://www.youtube.com/embed/8-kUlg11ENw?si=j_bShMCn45Wy_VCW"
+            title="Láak Demo Presentation"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</section>
