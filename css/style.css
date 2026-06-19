@@ -446,6 +446,10 @@ section h2 {
     flex-direction: column;
 
     align-items: center;
+
+    overflow: hidden;
+
+    border-radius: 24px;
 }
 
 .project-hero-image img {
@@ -458,6 +462,17 @@ section h2 {
 
     box-shadow:
         0 20px 40px rgba(0,0,0,.35);
+
+    transition:
+        transform .5s ease,
+        filter .5s ease;
+}
+
+.project-hero-image:hover img {
+
+    transform: scale(1.03);
+
+    filter: brightness(1.05);
 }
 
 .project-subtitle {
@@ -584,6 +599,10 @@ section h2 {
     flex-direction: column;
 
     align-items: center;
+
+    overflow: hidden;
+
+    border-radius: 20px;
 }
 
 .tech-overview-image img {
@@ -596,6 +615,17 @@ section h2 {
 
     box-shadow:
         0 20px 40px rgba(0,0,0,.35);
+
+    transition:
+        transform .5s ease,
+        filter .5s ease;
+}
+
+.tech-overview-image:hover img {
+
+    transform: scale(1.03);
+
+    filter: brightness(1.05);
 }
 
 
@@ -610,16 +640,7 @@ section h2 {
     margin-top: 40px;
 }
 
-.architecture-image {
 
-    flex: 7;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-}
 
 .architecture-text {
 
@@ -635,6 +656,21 @@ section h2 {
     color: #cbd5e1;
 }
 
+.architecture-image {
+
+    flex: 7;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+}
+
 .architecture-image img {
 
     width: 100%;
@@ -645,6 +681,17 @@ section h2 {
 
     box-shadow:
         0 20px 40px rgba(0,0,0,.35);
+
+    transition:
+        transform .5s ease,
+        filter .5s ease;
+}
+
+.architecture-image:hover img {
+
+    transform: scale(1.03);
+
+    filter: brightness(1.05);
 }
 
 .metrics-grid {
@@ -713,7 +760,12 @@ section h2 {
     flex-direction: column;
 
     align-items: center;
+
+    overflow: hidden;
+
+    border-radius: 20px;
 }
+
 .testing-image img {
 
     width: 100%;
@@ -724,6 +776,17 @@ section h2 {
 
     box-shadow:
         0 20px 40px rgba(0,0,0,.35);
+
+    transition:
+        transform .5s ease,
+        filter .5s ease;
+}
+
+.testing-image:hover img {
+
+    transform: scale(1.03);
+
+    filter: brightness(1.05);
 }
 
 .gallery-grid {
@@ -751,12 +814,11 @@ section h2 {
         0 10px 25px rgba(0,0,0,.25);
 }
 
-.gallery-item:hover {
+.gallery-item:hover img {
 
-    transform: translateY(-5px);
+    transform: scale(1.08);
 
-    box-shadow:
-        0 20px 40px rgba(0,0,0,.35);
+    filter: brightness(1.08);
 }
 
 .gallery-item img {
@@ -783,7 +845,22 @@ section h2 {
 
     font-size: .95rem;
 }
+.project-hero-image img,
+.tech-overview-image img,
+.architecture-image img,
+.testing-image img,
+.gallery-item img {
 
+    cursor: pointer;
+}
+.project-hero-image:hover,
+.tech-overview-image:hover,
+.architecture-image:hover,
+.testing-image:hover {
+
+    filter:
+        drop-shadow(0 0 25px rgba(59,130,246,.15));
+}
 /* ==========================
    EXPERIENCE
 ========================== */
