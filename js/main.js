@@ -32,3 +32,55 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+
+
+// ==========================
+// CONFIGURACIÓN DE PARTÍCULAS
+// ==========================
+document.addEventListener("DOMContentLoaded", function () {
+    if (document.getElementById("tsparticles")) {
+        tsParticles.load("tsparticles", {
+            fpsLimit: 60,
+            particles: {
+                color: {
+                    value: "#3b82f6", // Tu azul de los botones
+                },
+                links: {
+                    color: "#cbd5e1", // El gris claro de tus textos
+                    distance: 150,
+                    enable: true,
+                    opacity: 0.2,
+                    width: 1,
+                },
+                move: {
+                    enable: true,
+                    speed: 1.5, // Movimiento sutil y elegante
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    outModes: {
+                        default: "bounce", // Rebotan suavemente en los bordes
+                    },
+                },
+                number: {
+                    density: {
+                        enable: true,
+                        area: 800,
+                    },
+                    value: 60, // Cantidad de partículas
+                },
+                opacity: {
+                    value: 0.5,
+                },
+                shape: {
+                    type: "circle",
+                },
+                size: {
+                    value: { min: 1, max: 3 },
+                },
+            },
+            detectRetina: true,
+        });
+    }
+});

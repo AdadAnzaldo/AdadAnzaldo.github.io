@@ -3,9 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Fleet Vehicle Management Platform</title>
-
-
+    <title>Vehicle Services Digital Platform</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +17,7 @@
 
 </a>
 <body>
+    <div id="tsparticles"></div>
 <nav class="project-nav">
 
     <div class="logo">
@@ -34,8 +33,6 @@
 
         <li><a href="#architecture">Architecture</a></li>
 
-        <li><a href="#testing">Testing</a></li>
-
         <li><a href="#gallery">Gallery</a></li>
 
         <li><a href="#demo">Demo</a></li>
@@ -48,39 +45,43 @@
 
     <div class="project-hero-text">
 
-        <h1>Fleet Vehicle Management Platform</h1>
+        <h1>Vehicle Services Digital Platform</h1>
 
         <p class="project-subtitle">
 
-            A digital platform designed to streamline vehicle registration
-            and administrative processes for companies managing large vehicle fleets.<br>
+            This project involved the development of a complete digital platform for a vehicle registration services
+             company specialized in procedures such as vehicle registration, deregistration, ownership transfers, plate 
+             replacements, and compliance management.<br>
 
-            The solution combines a public-facing service portal with an internal
-            workflow management system, allowing organizations to track the status
-            of their vehicle-related procedures in real time.<br>
+            Beyond creating a modern corporate website, the solution provides real-time tracking capabilities that allow both individual 
+            customers and companies managing large vehicle fleets to monitor the status of their procedures online. Through a secure 
+            integration with a centralized database, clients can instantly access updated information using their RFC, 
+            significantly improving transparency and customer experience.<br>
 
-            By simply entering their company tax identifier (RFC), fleet managers
-            can access the current status of active requests, reducing manual
-            communication and improving operational visibility.<br>
+            To streamline internal operations, a custom desktop application was also developed 
+            using Python and Flet. By simply uploading an Excel file, company staff 
+            can automatically synchronize and update records stored in Supabase, eliminating 
+            manual data entry and ensuring accurate, real-time information across the platform.<br>
 
-            To support internal operations, a custom Python application was
-            developed to synchronize and update records through Excel-based
-            workflows, enabling efficient management of large volumes of requests.<br>
 
         </p>
 
         <div class="project-tags">
 
-        <span >Python</span>
-        <span>Docker</span>
-        <span>React</span>
-        <span>CSS</span>
-        <span>Flask</span>
-        <span>Flask-CORS</span>
-        <span>LangChain</span>
-        <span>Ollama</span>
-        <span>Qwen</span>
-        <span>dotenv</span>
+
+
+            <span>Python</span>
+            <span>Flet</span>
+            <span>Supabase</span>
+            <span>PostgreSQL</span>
+            <span>JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>REST API</span>
+            <span>Excel Automation</span>
+            <span>SQL</span>
+
+
 
         </div>
 
@@ -95,7 +96,7 @@
             <div class="hero-image-caption">
 
                 Conceptual illustration
-                showcasing fleet vehicle tool.
+                showcasing Modern digital platform integrating vehicle registration services.
 
             </div>
 
@@ -112,34 +113,11 @@
 
             <div class="impact-card">
 
-                <h3>Fleet Visibility</h3>
+                <h3>Customer Self-Service</h3>
 
                 <p>
-                    Enabled companies to track vehicle-related procedures using their RFC, 
-                    providing real-time visibility into ongoing requests.
-                </p>
-
-            </div>
-
-            <div class="impact-card">
-
-                <h3>Workflow Automation</h3>
-
-                <p>
-                     Centralized process updates and reduced manual 
-                     administrative effort through bulk data synchronization.
-                </p>
-
-            </div>
-
-            <div class="impact-card">
-
-                <h3>Cloud-Based Architecture</h3>
-
-                <p>
-                    Implemented a scalable cloud database to maintain service history, 
-                    comments, statuses, and operational records.
-                </p>
+                    Reduced customer dependency on phone calls and emails by providing 
+                    online access to procedure status information. </p>
 
             </div>
 
@@ -148,9 +126,29 @@
                 <h3>Operational Efficiency</h3>
 
                 <p>
-                    Improved communication between administrators and fleet
-                    managers by providing self-service status tracking.
-                </p>
+                     Automated bulk data updates through Excel integration, 
+                     significantly reducing administrative effort. 
+                    </p>
+
+            </div>
+
+            <div class="impact-card">
+
+                <h3>Real-Time Visibility</h3>
+
+                <p>
+                    Enabled instant access to vehicle procedure 
+                    information directly from a centralized database. </p>
+
+            </div>
+
+            <div class="impact-card">
+
+                <h3>Fleet Scalability</h3>
+
+                <p>
+                    Built a solution capable of supporting both 
+                    individual customers and organizations managing large vehicle fleets. </p>
 
             </div>
 
@@ -171,29 +169,32 @@
 
                 <p>
 
-                   The Fleet Management Platform was developed to simplify the administration and 
-                   tracking of vehicle-related procedures for organizations managing large fleets.
+                   This project was developed as a comprehensive digital platform for a vehicle registration services company.
+                    The solution combines a public-facing website,
+                    a centralized cloud database, and an internal desktop application to streamline both customer interactions and operational workflows.
                 </p>
 
                 <p>
-                    The solution combines a public-facing web portal with a centralized cloud database,
-                     allowing fleet managers to monitor the status of active procedures through an RFC-based lookup system. 
-                     This approach provides real-time visibility into ongoing requests while reducing the need for manual follow-up 
-                     communication between clients and administrative personnel.
+                    The web platform allows customers to access information about services such as vehicle registration, 
+                    deregistration, ownership transfers, plate replacements, and compliance-related procedures. 
+                    In addition to providing online visibility for the business, the platform offers a real-time tracking 
+                    system that enables clients to check the status of their procedures directly through the website.
                 </p>
 
-                <p>To support internal operations, the platform incorporates a workflow management system that stores procedure details, 
-                    status updates, comments, and historical records in a centralized repository. This enables administrators to maintain 
-                    accurate and up-to-date information throughout the lifecycle of each request.
+                <p>To support organizations managing large vehicle fleets, a dedicated consultation module was implemented. 
+                    Customers can search and retrieve information associated with their RFC, allowing fleet managers to monitor 
+                    multiple ongoing procedures efficiently without requiring manual assistance from company personnel.
                 </p>
 
-                <p>A custom Python application was also developed to streamline large-scale data management. Through structured Excel imports,
-                     administrators can efficiently update multiple procedures at once, ensuring consistency across records while significantly 
-                     reducing manual data entry.
+                <p>On the operational side, a custom desktop application was developed using Python and Flet. The application allows 
+                    employees to upload Excel spreadsheets containing updated procedure information. Once uploaded, the data is automatically
+                     validated, processed, and synchronized with the Supabase database, ensuring that customers always have access to accurate 
+                     and up-to-date information.
                 </p>
 
-                <p>By combining cloud-based data management, workflow automation, and self-service tracking capabilities, the platform improves
-                    operational efficiency, enhances transparency for fleet managers, and modernizes the administration of vehicle registration services.
+                <p>By integrating web technologies, cloud databases, SQL, and process automation, the platform significantly improves customer 
+                    transparency, reduces administrative workload, and provides a scalable solution capable of supporting both individual clients 
+                    and enterprise fleet operators.
                 </p>
 
             </div>
@@ -217,81 +218,55 @@
 
             <div class="tech-card">
 
-                <h3>Customer Portal</h3>
-                <p>Public-facing website that allows fleet managers to access service information and 
-                    track active vehicle procedures using their company's RFC.</p><br>
+                <h3>Backend & Database</h3>
+                <p>Business logic, data storage, and real-time procedure management.</p><br>
                 <div class="tech-tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>Responsive Design</span>
-                </div>
-
-            </div>
-
-            <div class="tech-card">
-
-                <h3>Fleet Tracking</h3>
-                <p>Self-service tracking system that provides real-time visibility 
-                    into procedure status, updates, comments, and processing stages.</p><br>
-                <div class="tech-tags">
-
-                    <span>RFC Lookup</span>
-                    <span>Status Tracking</span>
-                    <span>Workflow Management</span>
-                    <span>Client Portal</span>
-
-                </div>
-
-            </div>
-
-            <div class="tech-card">
-
-                <h3>Cloud Database</h3>
-                <p>Centralized repository used to store procedures, update history, 
-                    customer information, comments, and operational records.</p><br>
-                <div class="tech-tags">
-
                     <span>Supabase</span>
                     <span>PostgreSQL</span>
-                    <span>Cloud Storage</span>
-                    <span>REST API</span>
-
+                    <span>SQL</span>
                 </div>
 
             </div>
 
-
             <div class="tech-card">
 
-                <h3>Administrative Tool</h3>
-                <p>Custom application developed to simplify administrative
-                     operations and bulk updates of vehicle procedures.</p><br>
-                <div class="tech-tags">
+                <h3>Desktop Automation</h3>
+                <p>Internal application for bulk updates and Excel-driven data synchronization.</p><br>
 
+                <div class="tech-tags">
                     <span>Python</span>
-                    <span>Flask</span>
-                    <span>CRUD Operations</span>
-                    <span>Data Management</span>
-
+                    <span>Flet</span>
+                    <span>OpenPyXL</span>
                 </div>
 
             </div>
 
             <div class="tech-card">
 
-                <h3>Data Automation</h3>
-                <p>Excel-based workflow designed to update multiple records simultaneously while
-                     maintaining data consistency across the platform.C</p><br>
-                <div class="tech-tags">
+                <h3>Data Integration</h3>
+                <p>Automated synchronization between Excel files and cloud database records.</p><br>
 
-                    <span>Excel</span>
-                    <span>openpyxl</span>
-                    <span>Bulk Updates</span>
-                    <span>Data Validation</span>
+                <div class="tech-tags">
+                    <span>REST API</span>
+                    <span>JSON</span>
+                    <span>Supabase API</span>
                 </div>
 
             </div>
+
+
+            <div class="tech-card">
+
+                <h3>Infrastructure</h3>
+                <p>Cloud-hosted environment supporting real-time access and centralized data management.</p><br>
+
+                <div class="tech-tags">
+                    <span>Supabase</span>
+                    <span>Cloud Hosting</span>
+                </div>
+
+            </div>
+
 
         </div>
 
@@ -299,21 +274,21 @@
     </section>
 
     <section id="architecture" class="project-section">
-         <h2>Architecture</h2>
-
+        <h2>Architecture</h2>
+        <p>
+            A decoupled client-server architecture designed for high availability, secure data queries, and automated internal operations.
+        </p>
         <div class="architecture-layout">
 
             <div class="architecture-image">
 
                 <img
-                    src="../assets/images/laak-architecture.png"
-                    alt="Láak Architecture">
+                    src="../assets/images/fleet project/fleet-architecture.png"
+                    alt="System Architecture">
 
                 <p class="hero-image-caption">
 
-                    Conceptual illustration of the fleet management platform,
-                    showcasing RFC-based procedure tracking, workflow automation,
-                    and centralized cloud-based administration.
+                    Conceptual illustration of the Architecture project on three principal elements. 
 
                 </p>
 
@@ -321,27 +296,23 @@
 
             <div class="architecture-text">
 
-               
 
+                    
                 <p>
-                    Láak Chatbot was designed using a modular architecture that
-                    separates the user interface, application services, language
-                    model orchestration, and organizational knowledge repository.
+                     <strong>Web Frontend (Hostinger): </strong>Built with native web technologies (HTML5, CSS3, Vanilla JS). It implements a frictionless Dual-Factor
+                     Query mechanism—requiring both the client's RFC and Vehicle Circulation Card—to securely expose real-time tracking data without 
+                     traditional user authentication.
                 </p>
-
+                    
                 <p>
-                    Each user request is enriched with relevant contextual
-                    information retrieved from the internal knowledge base before
-                    being processed by the selected language model. This approach
-                    improves response relevance while ensuring alignment with
-                    company-specific procedures and documentation.
+                    <strong>Database & Backend (Supabase):</strong> Acts as the system's Single Source of Truth utilizing PostgreSQL. 
+                    All clients communicate via native REST APIs, eliminating middleware latency and streamlining CRUD operations.
                 </p>
-
+                    
                 <p>
-                    By decoupling the frontend, backend, retrieval layer, and
-                    language models, the platform remains scalable, maintainable,
-                    and flexible enough to support future integrations and model
-                    experimentation.
+                    <strong>Operational Desktop App (Python & Flet):</strong> A custom internal tool featuring an automated ETL pipeline. It parses 
+                    administrative files locally (pandas for .csv, openpyxl for .xlsx) to validate data integrity before executing 
+                    batch synchronizations to the cloud database.
                 </p>
 
             </div>
@@ -351,122 +322,9 @@
     </section>
 
 
-<section id="testing" class="project-section">
-
-    <h2>Testing & Evaluation</h2>
-
-    <div class="testing-layout">
-
-        <div class="testing-text">
-
-            <p>
-                To ensure response quality and reliability, the platform
-                was evaluated using DeepEval, a specialized framework for
-                testing large language model applications.
-            </p><br>
-
-            <p>
-                The evaluation process focused on answer relevance,
-                factual consistency, contextual accuracy, and hallucination
-                detection. These metrics provided objective insights into
-                model behavior and enabled systematic comparison between
-                different language models.
-            </p><br>
-
-            <p>
-                The evaluation process provided quantitative evidence of
-                model performance, enabling informed decisions regarding
-                model selection, response quality, and knowledge retrieval
-                effectiveness.
-            </p>
-
-        </div>
-
-        <div class="testing-image">
-
-            <img
-                src="../assets/images/deepeval.gif"
-                alt="DeepEval Metrics">
-
-            <p class="hero-image-caption">
-
-                DeepEval evaluation workflow and metric reporting.
-
-            </p>
-
-        </div>
-
-    </div>
-
-    <div class="metrics-grid">
-
-        <div class="metric-card">
-
-            <h3>Answer Relevancy</h3>
-
-            <p>
-                Measures how well responses address the user's query.
-            </p>
-
-        </div>
-
-        <div class="metric-card">
-
-            <h3>Faithfulness</h3>
-
-            <p>
-                Verifies that responses remain grounded in the provided context.
-            </p>
-
-        </div>
-
-        <div class="metric-card">
-
-            <h3>Contextual Precision</h3>
-
-            <p>
-                Evaluates whether retrieved information is relevant and useful.
-            </p>
-
-        </div>
-
-        <div class="metric-card">
-
-            <h3>Contextual Recall</h3>
-
-            <p>
-                Measures how effectively relevant knowledge is retrieved.
-            </p>
-
-        </div>
-
-        <div class="metric-card">
-
-            <h3>Contextual Relevancy</h3>
-
-            <p>
-                Assesses the relationship between retrieved context and responses.
-            </p>
-
-        </div>
-
-        <div class="metric-card">
-
-            <h3>Hallucination</h3>
-
-            <p>
-                Detects unsupported or fabricated information generated by the model.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
 <section id="gallery" class="project-section">
 
-    <h2>Chatbot Gallery</h2>
+    <h2>Vehicle Services Digital Platform Gallery</h2>
 
     <p class="section-description">
         Screenshots showcasing the user interface, conversational experience,
@@ -478,11 +336,13 @@
         <div class="gallery-item">
 
             <img
-                src="../assets/images/laak-1.png"
+                src="../assets/images/fleet project/fleet-gallery-1.png"
                 alt="Láak Home Screen">
 
             <p>
-                Main chatbot interface with contextual responses.
+                A modern, responsive web interface designed to establish the company's 
+                digital presence. It features a clean hero section and a clear breakdown 
+                of corporate vehicle registration services, optimized for both user experience and performance.
             </p>
 
         </div>
@@ -490,11 +350,13 @@
         <div class="gallery-item">
 
             <img
-                src="../assets/images/laak-2.png"
+                src="../assets/images/fleet project/fleet-gallery-2.png"
                 alt="Knowledge Retrieval">
 
             <p>
-                Test Internal endpoints.
+                An intuitive contact and lead-generation form seamlessly integrated into the platform. 
+                This section allows prospective clients to easily submit inquiries, 
+                request specific compliance procedures, and connect directly with the support team.
             </p>
 
         </div>
@@ -502,40 +364,51 @@
         <div class="gallery-item">
 
             <img
-                src="../assets/images/laak-3.png"
+                src="../assets/images/fleet project/fleet-gallery-3.png"
                 alt="Model Selection">
 
             <p>
-                Results test evaluation.
+                A lightweight, native desktop application built for the operational staff. 
+                The streamlined UI allows employees to easily drag-and-drop or select CSV 
+                datasets, triggering the local ETL validation pipeline before cloud synchronization.
             </p>
 
         </div>
+                <div class="gallery-item">
 
+            <img
+                src="../assets/images/fleet project/fleet-gallery-4.png"
+                alt="Model Selection">
+
+            <p>
+                The core customer-facing feature: a secure, frictionless tracking module. By entering
+                 their unique dual-factor credentials (Tax ID/RFC and Circulation Card), clients can instantly query 
+                 the database and monitor the exact status of their procedures in real time.
+            </p>
+
+        </div>
     </div>
 
 </section>
 
-<section id="demo" class="project-section">
 
-    <h2>Project Video</h2>
-
-    <div class="video-container">
-
-        <iframe
-            src="https://www.youtube.com/embed/8-kUlg11ENw?si=j_bShMCn45Wy_VCW"
-            title="Láak Demo Presentation"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
-        </iframe>
-
-    </div>
-
-</section>
 <div id="image-modal" class="modal">
         <span class="close-modal">&times;</span>
         <img class="modal-content" id="modal-image">
         <div id="modal-caption"></div>
     </div>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-engine@2/tsparticles.engine.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-basic@2/tsparticles.basic.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-interaction-particles-links@2/tsparticles.interaction.particles.links.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-move-base@2/tsparticles.move.base.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-shape-circle@2/tsparticles.shape.circle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-color@2/tsparticles.updater.color.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-opacity@2/tsparticles.updater.opacity.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-size@2/tsparticles.updater.size.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+
+
+
 <script src="../js/main.js"></script>
 </body>
