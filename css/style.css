@@ -154,7 +154,7 @@ body {
             transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        /* Línea láser inferior oculta */
+        
         nav a::after {
             content: '';
             position: absolute;
@@ -168,7 +168,7 @@ body {
             transform: translateX(-50%);
         }
 
-        /* --- ESTADOS HOVER DE LOS ENLACES --- */
+        
         nav a::after {
             color: #f8fafc; /* Texto brilla en blanco puro */
             text-shadow: 0 0 10px rgba(56, 189, 248, 0.25);
@@ -177,9 +177,10 @@ body {
         /* La línea láser se expande desde el centro */
         nav a:hover::after {
             width: 100%;
-        }
             transition: width 0.28s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.28s;
-        /* Clase activa para indicar la sección actual */
+        }
+        
+
         nav a.active {
             color: #38bdf8;
             font-weight: 600;
