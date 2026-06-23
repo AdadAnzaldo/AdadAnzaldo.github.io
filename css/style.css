@@ -124,20 +124,119 @@ nav a:hover {
     gap: 20px;
 }
 
-.hero-image img {
+       /* --- CONTENEDOR DE LA IMAGEN HERO (La clave del efecto) --- */
+        .hero-image-container {
+            position: relative;
+            width: 370px;
+            height: 370px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+        }
 
-    width: 350px;
-    height: 350px;
+        /* --- 1. ANILLO EXTERIOR GIRATORIO (Gradiente Cyberpunk) --- */
+        .hero-image-container::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            /* Degradado de neón que fluye con tu estética */
+            background: linear-gradient(135deg, #0284c7 0%, #38bdf8 40%, transparent 100%);
+            animation: rotateOuter 10s linear infinite;
+            padding: 4px; /* Grosor del anillo neón */
+            
+            /* Técnica de máscara CSS para renderizar solo el borde del degradado */
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+            transition: all 0.5s ease;
+        }
 
-    object-fit: cover;
+        /* --- 2. ANILLO INTERIOR DISCONTINUO (Efecto Escáner/HUD) --- */
+        .hero-image-container::after {
+            content: '';
+            position: absolute;
+            width: 93%;
+            height: 93%;
+            border-radius: 50%;
+            border: 2px dashed rgba(56, 189, 248, 0.35);
+            /* Gira en sentido contrario al anillo exterior */
+            animation: rotateInner 15s linear infinite;
+            pointer-events: none;
+            transition: all 0.5s ease;
+        }
 
-    border-radius: 50%;
+        /* --- 3. IMAGEN / TU FOTOGRAFÍA PROFESIONAL --- */
+        .hero-image img {
+            width: 325px;
+            height: 325px;
+            object-fit: cover;
+            border-radius: 50%;
+            /* Borde oscuro muy grueso que genera una "brecha" de aislamiento de hardware */
+            border: 6px solid #030712; 
+            background: #0f172a;
+            box-shadow: 
+                0 0 30px rgba(2, 132, 199, 0.25),
+                inset 0 0 20px rgba(56, 189, 248, 0.1);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 2;
+        }
 
-    border: 4px solid #3b82f6;
+        /* --- 4. DETALLES DE ESCÁNER (Opcionales para darle más realismo robótico) --- */
+        .tech-corner {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border: 2px solid rgba(56, 189, 248, 0.4);
+            border-radius: 2px;
+            z-index: 1;
+            transition: all 0.5s ease;
+            opacity: 0.7;
+        }
+        .top-left { top: 0; left: 0; border-right: none; border-bottom: none; }
+        .top-right { top: 0; right: 0; border-left: none; border-bottom: none; }
+        .bottom-left { bottom: 0; left: 0; border-right: none; border-top: none; }
+        .bottom-right { bottom: 0; right: 0; border-left: none; border-top: none; }
 
-    box-shadow:
-        0 0 25px rgba(59, 130, 246, .25);
-}
+
+        /* --- ESTADOS EN HOVER (Interacción Activa) --- */
+        .hero-image-container:hover img {
+            transform: scale(1.03); /* Ligero aumento */
+            box-shadow: 
+                0 0 45px rgba(56, 189, 248, 0.45),
+                inset 0 0 25px rgba(56, 189, 248, 0.2);
+            border-color: #0b0f19; /* Transición sutil del color de separación */
+        }
+
+        .hero-image-container:hover::before {
+            filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.8));
+            transform: scale(1.02);
+        }
+
+        .hero-image-container:hover::after {
+            border-color: rgba(56, 189, 248, 0.6);
+            transform: scale(0.98);
+        }
+
+        .hero-image-container:hover .tech-corner {
+            opacity: 1;
+            border-color: rgba(56, 189, 248, 0.8);
+            transform: scale(1.05);
+        }
+
+        /* --- ANIMACIONES DE ROTACIÓN --- */
+        @keyframes rotateOuter {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes rotateInner {
+            0% { transform: rotate(360deg); }
+            100% { transform: rotate(0deg); }
+        }
 
 /* ==========================
    BUTTONS
