@@ -23,52 +23,177 @@ body {
    NAVBAR
 ========================== */
 
-nav {
-    position: sticky;
-    top: 0;
+ nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: var(--nav-height);
+            padding: 0 10%; /* Relleno horizontal; altura fija para centrar */
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+            /* Glassmorphism avanzado con desenfoque de fondo */
+            background: rgba(3, 7, 18, 0.2);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
 
-    padding: 20px 10%;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
 
-    background: rgba(15, 23, 42, 0.9);
+            z-index: 1000;
+            border-bottom: 1px solid transparent;
+            transition: background 0.3s, padding 0.3s, box-shadow 0.3s, height 0.28s ease;
+            position: relative;
+        }
 
-    backdrop-filter: blur(10px);
+        nav:not(.project-nav) {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
 
-    z-index: 1000;
-}
-nav, section {
-    position: relative;
-    z-index: 10;
-}
-.logo {
-    font-size: 1.2rem;
-    font-weight: 700;
-}
+        nav.project-nav {
+            position: sticky;
+            top: 0;
+        }
+        
+        nav:not(.project-nav) ~ section:first-of-type {
+            padding-top: var(--nav-height);
+        }
+        nav::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px; /* El grosor de la línea */
 
-.logo a{
-    text-decoration: none;
-    color: #f8fafc;
-}
+            /* Un degradado que va de transparente -> cian brillante -> transparente */
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(56, 189, 248, 0.4) 20%, 
+                rgba(56, 189, 248, 0.4) 80%, 
+                transparent 100%
+            );
+            transition: background 0.3s, box-shadow 0.3s;
+            pointer-events: none; /* no bloquea clics */
+            z-index: 0;
+        }
 
-nav ul {
-    display: flex;
-    gap: 30px;
-    list-style: none;
-}
+        
+        nav.scrolled {
+            /* Mantener el mismo tono/transparencia que el estado inicial */
+            background: rgba(3, 7, 18, 0.2);
+            /* evitar borde o brillo cian al encoger */
+            border-bottom-color: transparent;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            height: calc(var(--nav-height) - 14px);
+        }
+        nav.scrolled::after {
+            /* Mantener el degradado base sin aumentar la intensidad cian */
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(56, 189, 248, 0.4) 20%, 
+                rgba(56, 189, 248, 0.4) 80%, 
+                transparent 100%
+            );
+        }
+        
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            position: relative;
+            z-index: 2;
+        }
 
-nav a {
-    color: #cbd5e1;
-    text-decoration: none;
+        .logo a {
+            text-decoration: none;
+            color: #f8fafc;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            transition: color 0.3s ease;
+        }
 
-    transition: .3s;
-}
+        /* El punto o detalle dinámico del logo */
+        .logo a span {
+            color: #38bdf8;
+            text-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+            transition: all 0.3s ease;
+        }
 
-nav a:hover {
-    color: #3b82f6;
-}
+        .logo a:hover {
+            color: #38bdf8;
+        }
+        
+        .logo a:hover span {
+            color: #ffffff;
+            text-shadow: 0 0 15px #38bdf8, 0 0 30px #38bdf8;
+        }
+
+        /* --- LISTA DE NAVEGACIÓN --- */
+        nav ul {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* --- ENLACES INDIVIDUALES (Efecto línea de luz expansiva) --- */
+        nav a {
+            position: relative;
+            color: #94a3b8; /* Gris Slate suave para mejor contraste inactivo */
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase; /* Toque técnico/militar */
+            padding: 6px 0;
+            transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Línea láser inferior oculta */
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #38bdf8, transparent);
+            box-shadow: 0 0 8px #38bdf8, 0 0 15px rgba(56, 189, 248, 0.5);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transform: translateX(-50%);
+        }
+
+        /* --- ESTADOS HOVER DE LOS ENLACES --- */
+        nav a::after {
+            color: #f8fafc; /* Texto brilla en blanco puro */
+            text-shadow: 0 0 10px rgba(56, 189, 248, 0.25);
+        }
+
+        /* La línea láser se expande desde el centro */
+        nav a:hover::after {
+            width: 100%;
+        }
+            transition: width 0.28s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.28s;
+        /* Clase activa para indicar la sección actual */
+        nav a.active {
+            color: #38bdf8;
+            font-weight: 600;
+        }
+        nav a.active::after {
+            width: 100%;
+            background: #38bdf8;
+        }
+
+        /* Contenedor de relleno para simular espacio */
+        .dummy-content {
+            padding: 10% 10%;
+            text-align: center;
+        }
 
 /* ==========================
    HERO
@@ -135,27 +260,29 @@ nav a:hover {
             user-select: none;
         }
 
-        /* --- 1. ANILLO EXTERIOR GIRATORIO (Gradiente Cyberpunk) --- */
+        
         .hero-image-container::before {
             content: '';
             position: absolute;
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            /* Degradado de neón que fluye con tu estética */
+           
             background: linear-gradient(135deg, #0284c7 0%, #38bdf8 40%, transparent 100%);
             animation: rotateOuter 10s linear infinite;
-            padding: 4px; /* Grosor del anillo neón */
+            padding: 4px; 
             
-            /* Técnica de máscara CSS para renderizar solo el borde del degradado */
+            
             -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
             -webkit-mask-composite: xor;
             mask-composite: exclude;
             pointer-events: none;
             transition: all 0.5s ease;
         }
 
-        /* --- 2. ANILLO INTERIOR DISCONTINUO (Efecto Escáner/HUD) --- */
+        
         .hero-image-container::after {
             content: '';
             position: absolute;
@@ -169,13 +296,13 @@ nav a:hover {
             transition: all 0.5s ease;
         }
 
-        /* --- 3. IMAGEN / TU FOTOGRAFÍA PROFESIONAL --- */
+       
         .hero-image img {
             width: 325px;
             height: 325px;
             object-fit: cover;
             border-radius: 50%;
-            /* Borde oscuro muy grueso que genera una "brecha" de aislamiento de hardware */
+            
             border: 6px solid #030712; 
             background: #0f172a;
             box-shadow: 
@@ -185,7 +312,7 @@ nav a:hover {
             z-index: 2;
         }
 
-        /* --- 4. DETALLES DE ESCÁNER (Opcionales para darle más realismo robótico) --- */
+       
         .tech-corner {
             position: absolute;
             width: 12px;
@@ -202,13 +329,13 @@ nav a:hover {
         .bottom-right { bottom: 0; right: 0; border-left: none; border-top: none; }
 
 
-        /* --- ESTADOS EN HOVER (Interacción Activa) --- */
+        
         .hero-image-container:hover img {
-            transform: scale(1.03); /* Ligero aumento */
+            transform: scale(1.03); 
             box-shadow: 
                 0 0 45px rgba(56, 189, 248, 0.45),
                 inset 0 0 25px rgba(56, 189, 248, 0.2);
-            border-color: #0b0f19; /* Transición sutil del color de separación */
+            border-color: #0b0f19;
         }
 
         .hero-image-container:hover::before {
@@ -227,7 +354,7 @@ nav a:hover {
             transform: scale(1.05);
         }
 
-        /* --- ANIMACIONES DE ROTACIÓN --- */
+        
         @keyframes rotateOuter {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
@@ -244,7 +371,7 @@ nav a:hover {
 
 
 .btn-primary {
-    /* Gradiente premium alineado con la paleta de Supabase y tu Hero */
+   
     background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
     color: #ffffff;
     text-decoration: none;
@@ -257,42 +384,37 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     
-    /* Borde interno brillante y sombra base sutil */
     border: 1px solid rgba(56, 189, 248, 0.3);
     box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25), 
                 inset 0 1px 0 rgba(255, 255, 255, 0.15);
     
-    /* Transición ultra suave de aceleración física */
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
 }
 
 .btn-primary:hover {
-    transform: translateY(-2px); /* Desplazamiento más natural de 2px */
+    transform: translateY(-2px); 
     background: linear-gradient(135deg, #0369a1 0%, #0284c7 100%);
-    
-    /* Resplandor de neón activo al pasar el cursor */
+
     border-color: rgba(56, 189, 248, 0.6);
     box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4), 
                 inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .btn-primary:active {
-    transform: translateY(0); /* Efecto de pulsación física */
+    transform: translateY(0); 
     box-shadow: 0 2px 8px rgba(2, 132, 199, 0.4);
 }
 
-
-/* --- BOTÓN SECUNDARIO (Estilo Glassmorphism / Slate Outline) --- */
 .btn-secondary {
-    /* Fondo translúcido de cristal */
+    
     background: rgba(15, 23, 42, 0.3);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     
-    /* Borde suave integrado con el fondo oscuro */
+   
     border: 1px solid rgba(148, 163, 184, 0.2);
-    color: #cbd5e1; /* Texto gris suave para jerarquía visual */
+    color: #cbd5e1;
     text-decoration: none;
     padding: 14px 28px;
     border-radius: 12px;
@@ -310,9 +432,8 @@ nav a:hover {
 .btn-secondary:hover {
     transform: translateY(-2px);
     background: rgba(15, 23, 42, 0.6);
-    color: #ffffff; /* El texto brilla en blanco puro */
-    
-    /* Sutil destello azul en el contorno */
+    color: #ffffff; 
+   
     border-color: rgba(56, 189, 248, 0.4);
     box-shadow: 0 4px 15px rgba(56, 189, 248, 0.1);
 }
@@ -532,11 +653,6 @@ section h2 {
     position: relative;
 
     z-index: 2;
-}
-
-.project-card:hover img {
-
-    transform: scale(1.05);
 }
 
 .project-card:hover img {
@@ -1589,6 +1705,29 @@ section h2 {
         gap: 15px;
     }
 
+    /* Altura más compacta en pantallas pequeñas */
+    :root {
+        --nav-height: 56px;
+    }
+
+
+@media (max-width: 600px) {
+    :root {
+        --nav-height: 50px;
+    }
+
+    nav.scrolled {
+        height: calc(var(--nav-height) - 10px);
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+    }
+}
 
 }
 
@@ -1725,6 +1864,7 @@ section h2 {
         --neon-blue: #0072ff;
         --card-bg: rgba(10, 17, 32, 0.6);
         --border-color: rgba(0, 240, 255, 0.15);
+        --nav-height: 64px;
     }
 
     .tech-cards-grid {

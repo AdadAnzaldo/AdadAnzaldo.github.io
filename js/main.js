@@ -84,3 +84,28 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+// ==========================
+// NAVBAR SCROLL SHRINK
+// ==========================
+document.addEventListener('DOMContentLoaded', function () {
+    const navs = document.querySelectorAll('nav');
+    if (navs.length === 0) return;
+
+    const SCROLL_THRESHOLD = 50;
+
+    function onScroll() {
+        navs.forEach(nav => {
+            if (window.scrollY > SCROLL_THRESHOLD) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    }
+
+    // run on load in case the page is already scrolled
+    onScroll();
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+});
