@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ford IPC Specification Auditor</title>
+
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+</head>
+<body>
+    <a href="#top" class="back-to-top">
+        ↑
+    </a>
+    <div id="tsparticles"></div>
+<nav class="project-nav">
+
+    <div class="logo">
+
+        <a href="../index.html">
+            ← Portfolio
+        </a>
+
+    </div>
+
+    <ul>
+        <li><a href="#technologies">Technologies</a></li>
+
+        <li><a href="#architecture">Architecture</a></li>
+
+    </ul>
+
+</nav>
+<div id="top"></div>
+    <section class="project-hero">
+
+    <div class="project-hero-text">
+
+        <h1>Ford IPC Specification Auditor</h1>
+
+        <p class="project-subtitle">
+
+            Ford IPC DocuAligner is an automated specification auditing tool developed at Ford's Global
+             Technology and Business Center (GTBC) to validate documentation consistency for Instrument 
+             Panel Clusters (IPC). Engineered with Python and Flet, the platform allows test managers and 
+             engineers to upload complex vehicle configuration files and instantly cross-reference technical 
+             specifications, diagnostic trouble codes (DTC), and visual target assets (such as Tell-Tales / RTTs). 
+             By automatically detecting version mismatches and missing technical documentation, the tool prevents costly,
+              out-of-spec validation cycles before they ever reach the physical test benches.
+
+        </p>
+
+        <div class="project-tags">
+            <span>Python</span>
+            <span>Flet</span>
+            <span>Pandas</span>
+            <span>Instrument Panel Cluster (IPC)</span>
+            <span>DTC Diagnostics</span>
+            <span>Tell-Tales / RTT</span>
+            <span>Document Automation</span>
+            <span>Specification Auditing</span>
+        </div>
+
+    </div>
+
+    <div class="project-hero-image">
+
+        <img
+            src="../assets/images/documents-project/documents-hero.webp"
+            alt="Ford AutoTest AI Agent Suite">
+
+            <div class="hero-image-caption">
+
+                Conceptual illustration showing the UI of the Ford IPC DocuAligner tool, which allows 
+                test managers to upload vehicle configuration files and instantly validate the completeness 
+                and consistency of technical specifications, diagnostic codes, and visual assets.
+
+            </div>
+
+
+    </div>
+
+</section>
+
+   <section class="project-section">
+
+        <h2>Key Achievements</h2>
+
+        <div class="impact-grid">
+
+            <div class="impact-card">
+
+                <h3>Zero Waste Validation</h3>
+
+                <p>
+                    Prevented hundreds of hours of wasted physical testing by stopping mismatched or erroneous documentation from reaching active test engineers.
+                </p>
+
+            </div>
+
+            <div class="impact-card">
+
+                <h3>95% Audit Time Reduction</h3>
+
+                <p>
+                    Replaced manual multi-document cross-referencing spreadsheets with an automated 1-click Python auditing solution.
+                </p>
+
+            </div>
+
+            <div class="impact-card">
+
+                <h3>Complete Asset Coverage</h3>
+
+                <p>
+                    Automated the cataloging and checking of visual Tell-Tale (RTT) specs against designer reference files to ensure visual target compliance.
+                </p>
+
+            </div>
+
+            <div class="impact-card">
+
+                <h3>Strategic Shift-Left Quality</h3>
+
+                <p>
+                    Empowered test managers to instantly validate and reject incorrect client test requests before scheduling physical hardware validation.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="technologies" class="project-section">
+        
+                <h2>Technology & Functionality</h2>
+                
+         <div class="tech-overview">
+            
+             <div class="tech-overview-text">
+                    <p>
+                        Validating modern Instrument Panel Clusters (IPCs) requires absolute alignment across an extensive
+                         web of technical specifications. Before a test engineer can verify a cluster's screen layout, 
+                         they must cross-reference vehicle-specific feature sheets, design-freeze visual layouts (like Tell-Tales or RTTs),
+                          and diagnostic parameter tables (DTCs). Historically, validating the consistency of these documents was a manual, 
+                          error-prone task that absorbed days of engineering time, often leading to false bug reports due to outdated documentation.
+                    </p>
+                    <p>
+                        To eliminate this bottleneck, I developed an automated specification auditor utilizing a highly responsive 
+                        <strong>Python and Flet</strong> desktop architecture. The tool enables users to upload a primary vehicle and model 
+                        configuration spreadsheet. The engine then crawls internal team databases, dynamically mapping and auditing the percentage 
+                        of available specifications, instantly flagging missing technical documents, and ensuring that no version discrepancies exist
+                         between the requested testing protocols and the vehicle's physical firmware limits.
+                    </p>
+                    <p>
+                        A key feature of the auditor is its intelligent cross-referencing matrix. It automatically parses the active DTC databases
+                         against the vehicle’s specific wiring and model features, while simultaneously verifying that every requested Redundancy 
+                         Tell-Tale (RTT) visual asset exactly matches the designer-freeze reference images. This ensures that what is being requested 
+                         for testing is physically and logically present in the vehicle configuration.
+                    </p>
+                    <p>
+                        By delivering an instant, high-level readiness score to test managers, the tool ensures that any faulty or incomplete test requests
+                         are rejected and corrected at the source. This shifts validation quality assurance left, saving thousands of testing hours and 
+                         preventing redundant physical validation on mismatched instrument clusters.
+                    </p>
+                    </div>
+
+                    <div class="tech-overview-image">
+
+                        <img
+                            src="../assets/images/documents-project/documents-workflow.webp"
+                            alt="Documents Management workflow">
+
+                        <p class="hero-image-caption">
+
+                            Conceptual workflow illustrating the interaction between the user interface, 
+                            multi-agent auditing engine, and internal Ford databases. The auditor parses the 
+                            uploaded configuration file, cross-references the DTCs and visual assets against the 
+                            local database, and returns a detailed discrepancy report to the user.
+
+                        </p>
+
+            </div>
+         </div>
+            
+
+       <div class="tech-grid">
+
+    <div class="tech-card">
+
+            <h3>Interactive UI</h3>
+            <p>Reactive desktop application development, asynchronous state management, and real-time progress indicators.</p><br>
+            <div class="tech-tags">
+                <span>Python Flet</span>
+                <span>Flutter for Python</span>
+                <span>Asynchronous GUI</span>
+            </div>
+
+        </div>
+
+        <div class="tech-card">
+
+            <h3>Data Ingestion & Parsing</h3>
+            <p>Vectorized spreadsheet processing, schema mapping, and cross-referencing of diagnostic code tables.</p><br>
+            <div class="tech-tags">
+                <span>Pandas</span>
+                <span>OpenPyXL</span>
+                <span>Data Wrangling</span>
+            </div>
+
+        </div>
+
+        <div class="tech-card">
+
+            <h3>Visual Asset Audit</h3>
+            <p>Automated verification of RTT and Tell-Tale image files against official designer design-freeze reference targets.</p><br>
+            <div class="tech-tags">
+                <span>Image Metadata</span>
+                <span>File System Crawling</span>
+                <span>Asset Matching</span>
+            </div>
+
+        </div>
+
+        <div class="tech-card">
+
+            <h3>Specification Mapping</h3>
+            <p>Relational mapping of vehicle features, Diagnostic Trouble Codes (DTCs), and document version control.</p><br>
+            <div class="tech-tags">
+                <span>Relational Mapping</span>
+                <span>JSON Schemas</span>
+                <span>Version Audit</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    </section>
+
+    <section id="architecture" class="project-section">
+         <h2>Architecture</h2>
+
+        <div class="architecture-layout">
+
+            <div class="architecture-image">
+
+                <img
+                    src="../assets/images/documents-project/documents-architecture.webp"
+                    alt="Documents Management Architecture">
+
+                <p class="hero-image-caption">
+
+                    High-level architecture showing the decoupled three-tier design of the Ford IPC DocuAligner tool. The presentation layer is built with Flet,
+                     the auditing and logic engine is implemented in Python, and the local database layer manages relational mappings of approved visual assets, 
+                     DTC lists, and historic cluster schemas.
+
+                </p>
+
+            </div>
+
+            <div class="architecture-text">
+
+                <p>
+                    Ford IPC DocuAligner is designed around an agile, 
+                    event-driven desktop architecture that prioritizes rapid data parsing, 
+                    offline database synchronization, and local user-experience performance.
+                </p>
+
+                <p>
+                    The platform is built using a decoupled three-tier model:
+
+                        Presentation Layer (Flet/GUI): A clean, modern, reactive user interface developed in Flet (Flutter-for-Python),
+                         providing fast rendering, interactive file drag-and-drop, and real-time validation progress bars.
+
+                        Auditing & Logic Engine (Python Core): A multi-threaded parsing engine built with Python and Pandas that 
+                        processes massive configuration sheets, maps diagnostic schemas, and extracts image metadata.
+
+                        Local Database & Knowledge Layer: A relational mapping layer that indexes approved corporate design-freeze visual assets,
+                         DTC lists, and historic cluster schemas.
+                </p>
+
+                <p>
+                    When a configuration file is loaded, the processing is offloaded to a background thread to prevent UI freezing. The auditing engine
+                     parses the rows, performs vectorized comparison lookups against the local DB, and returns a detailed discrepancy report. This decoupled 
+                     architecture allows the engineering team to easily update target visual folders or update the DTC mapping rules without requiring any 
+                     modifications to the core interface.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+<div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="modal-caption"></div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-engine@2/tsparticles.engine.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-basic@2/tsparticles.basic.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-interaction-particles-links@2/tsparticles.interaction.particles.links.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-move-base@2/tsparticles.move.base.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-shape-circle@2/tsparticles.shape.circle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-color@2/tsparticles.updater.color.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-opacity@2/tsparticles.updater.opacity.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-size@2/tsparticles.updater.size.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
