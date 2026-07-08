@@ -109,3 +109,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('scroll', onScroll, { passive: true });
 });
+
+// ==========================
+// TIMELINE SCROLL ANIMATION
+// ==========================
+document.addEventListener("DOMContentLoaded", function () {
+    const timelineItems = document.querySelectorAll('.timeline-item-interactive');
+
+    if (timelineItems.length > 0) {
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15 // La animación se activa cuando el 15% de la tarjeta es visible
+        };
+
+        const timelineObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Añade la clase que dispara la animación de CSS
+                    entry.target.classList.add('visible');
+                    // Deja de observar el elemento para que la animación ocurra solo una vez
+                    observer.unobserve(entry.target); 
+                }
+            });
+        }, observerOptions);
+
+        timelineItems.forEach(item => {
+            timelineObserver.observe(item);
+        });
+    }
+});
