@@ -29,29 +29,24 @@
     </div>
 
     <ul>
-        <li><a href="#technologies">Technologies</a></li>
+        <li><a href="#technologies"><span class="en">Technologies</span><span class="es">Tecnologías</span></a></li>
 
-        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#architecture"><span class="en">Architecture</span><span class="es">Arquitectura</span></a></li>
 
     </ul>
-
+    <button id="lang-toggle-btn" class="lang-toggle-btn">ES</button>
 </nav>
 <div id="top"></div>
     <section class="project-hero">
 
     <div class="project-hero-text">
 
-        <h1>Ford IPC Specification Auditor</h1>
+        <h1><span class="en">Ford IPC Specification Auditor</span><span class="es">Auditor de Especificaciones Ford IPC</span></h1>
 
         <p class="project-subtitle">
 
-            Ford IPC DocuAligner is an automated specification auditing tool developed at Ford's Global
-             Technology and Business Center (GTBC) to validate documentation consistency for Instrument 
-             Panel Clusters (IPC). Engineered with Python and Flet, the platform allows test managers and 
-             engineers to upload complex vehicle configuration files and instantly cross-reference technical 
-             specifications, diagnostic trouble codes (DTC), and visual target assets (such as Tell-Tales / RTTs). 
-             By automatically detecting version mismatches and missing technical documentation, the tool prevents costly,
-              out-of-spec validation cycles before they ever reach the physical test benches.
+            <span class="en">Ford IPC DocuAligner is an automated specification auditing tool developed at Ford's Global Technology and Business Center (GTBC) to validate documentation consistency for Instrument Panel Clusters (IPC). Engineered with Python and Flet, the platform allows test managers and engineers to upload complex vehicle configuration files and instantly cross-reference technical specifications, diagnostic trouble codes (DTC), and visual target assets (such as Tell-Tales / RTTs). By automatically detecting version mismatches and missing technical documentation, the tool prevents costly, out-of-spec validation cycles before they ever reach the physical test benches.</span>
+            <span class="es">Ford IPC DocuAligner es una herramienta automatizada de auditoría de especificaciones desarrollada en el Global Technology and Business Center (GTBC) de Ford para validar la consistencia de la documentación de Instrument Panel Clusters (IPC). Diseñada con Python y Flet, la plataforma permite a los administradores de pruebas y a los ingenieros subir archivos complejos de configuración de vehículos y cruzar instantáneamente especificaciones técnicas, códigos de diagnóstico (DTC) y activos visuales (como Tell-Tales / RTTs). Al detectar automáticamente discrepancias de versión y documentación técnica faltante, la herramienta evita costosos ciclos de validación fuera de especificación antes de que lleguen a los bancos de pruebas físicos.</span>
 
         </p>
 
@@ -89,7 +84,7 @@
 
    <section class="project-section">
 
-        <h2>Key Achievements</h2>
+        <h2><span class="en">Key Achievements</span><span class="es">Logros Clave</span></h2>
 
         <div class="impact-grid">
 
@@ -141,35 +136,26 @@
 
     <section id="technologies" class="project-section">
         
-                <h2>Technology & Functionality</h2>
+                <h2><span class="en">Technology & Functionality</span><span class="es">Tecnología y Funcionalidad</span></h2>
                 
          <div class="tech-overview">
             
              <div class="tech-overview-text">
                     <p>
-                        Validating modern Instrument Panel Clusters (IPCs) requires absolute alignment across an extensive
-                         web of technical specifications. Before a test engineer can verify a cluster's screen layout, 
-                         they must cross-reference vehicle-specific feature sheets, design-freeze visual layouts (like Tell-Tales or RTTs),
-                          and diagnostic parameter tables (DTCs). Historically, validating the consistency of these documents was a manual, 
-                          error-prone task that absorbed days of engineering time, often leading to false bug reports due to outdated documentation.
+                        <span class="en">Validating modern Instrument Panel Clusters (IPCs) requires absolute alignment across an extensive web of technical specifications. Before a test engineer can verify a cluster's screen layout, they must cross-reference vehicle-specific feature sheets, design-freeze visual layouts (like Tell-Tales or RTTs), and diagnostic parameter tables (DTCs). Historically, validating the consistency of these documents was a manual, error-prone task that absorbed days of engineering time, often leading to false bug reports due to outdated documentation.</span>
+                        <span class="es">Validar los Instrument Panel Clusters (IPCs) modernos exige una alineación absoluta en una extensa red de especificaciones técnicas. Antes de que un ingeniero de pruebas pueda verificar el diseño de una pantalla, debe cruzar hojas de características específicas del vehículo, diseños visuales congelados (como Tell-Tales o RTTs) y tablas de parámetros de diagnóstico (DTCs). Históricamente, validar la consistencia de estos documentos era una tarea manual y propensa a errores que absorbía días de tiempo de ingeniería, a menudo generando informes falsos de fallas debido a documentación desactualizada.</span>
                     </p>
                     <p>
-                        To eliminate this bottleneck, I developed an automated specification auditor utilizing a highly responsive 
-                        <strong>Python and Flet</strong> desktop architecture. The tool enables users to upload a primary vehicle and model 
-                        configuration spreadsheet. The engine then crawls internal team databases, dynamically mapping and auditing the percentage 
-                        of available specifications, instantly flagging missing technical documents, and ensuring that no version discrepancies exist
-                         between the requested testing protocols and the vehicle's physical firmware limits.
+                        <span class="en">To eliminate this bottleneck, I developed an automated specification auditor utilizing a highly responsive <strong>Python and Flet</strong> desktop architecture. The tool enables users to upload a primary vehicle and model configuration spreadsheet. The engine then crawls internal team databases, dynamically mapping and auditing the percentage of available specifications, instantly flagging missing technical documents, and ensuring that no version discrepancies exist between the requested testing protocols and the vehicle's physical firmware limits.</span>
+                        <span class="es">Para eliminar este cuello de botella, desarrollé un auditor automatizado de especificaciones utilizando una arquitectura de escritorio altamente responsiva basada en <strong>Python y Flet</strong>. La herramienta permite a los usuarios subir una hoja de cálculo principal con la configuración del vehículo y el modelo. El motor luego recorre las bases de datos internas del equipo, mapeando y auditando dinámicamente el porcentaje de especificaciones disponibles, marcando instantáneamente documentos técnicos faltantes y asegurando que no existan discrepancias de versión entre los protocolos de prueba solicitados y los límites físicos del firmware del vehículo.</span>
                     </p>
                     <p>
-                        A key feature of the auditor is its intelligent cross-referencing matrix. It automatically parses the active DTC databases
-                         against the vehicle’s specific wiring and model features, while simultaneously verifying that every requested Redundancy 
-                         Tell-Tale (RTT) visual asset exactly matches the designer-freeze reference images. This ensures that what is being requested 
-                         for testing is physically and logically present in the vehicle configuration.
+                        <span class="en">A key feature of the auditor is its intelligent cross-referencing matrix. It automatically parses the active DTC databases against the vehicle’s specific wiring and model features, while simultaneously verifying that every requested Redundancy Tell-Tale (RTT) visual asset exactly matches the designer-freeze reference images. This ensures that what is being requested for testing is physically and logically present in the vehicle configuration.</span>
+                        <span class="es">Una característica clave del auditor es su matriz inteligente de referencia cruzada. Analiza automáticamente las bases de datos activas de DTC contra las características específicas del cableado y el modelo del vehículo, mientras verifica simultáneamente que cada activo visual Redundancy Tell-Tale (RTT) solicitado coincida exactamente con las imágenes de referencia del diseño congelado. Esto garantiza que lo que se solicita para pruebas esté físicamente y lógicamente presente en la configuración del vehículo.</span>
                     </p>
                     <p>
-                        By delivering an instant, high-level readiness score to test managers, the tool ensures that any faulty or incomplete test requests
-                         are rejected and corrected at the source. This shifts validation quality assurance left, saving thousands of testing hours and 
-                         preventing redundant physical validation on mismatched instrument clusters.
+                        <span class="en">By delivering an instant, high-level readiness score to test managers, the tool ensures that any faulty or incomplete test requests are rejected and corrected at the source. This shifts validation quality assurance left, saving thousands of testing hours and preventing redundant physical validation on mismatched instrument clusters.</span>
+                        <span class="es">Al entregar una puntuación instantánea y de alto nivel de preparación a los administradores de pruebas, la herramienta garantiza que cualquier solicitud de prueba defectuosa o incompleta sea rechazada y corregida en la fuente. Esto desplaza la garantía de calidad de validación hacia la izquierda, ahorrando miles de horas de pruebas y previniendo validaciones físicas redundantes en clusters instrumentales incompatibles.</span>
                     </p>
                     </div>
 
@@ -248,7 +234,7 @@
     </section>
 
     <section id="architecture" class="project-section">
-         <h2>Architecture</h2>
+         <h2><span class="en">Architecture</span><span class="es">Arquitectura</span></h2>
 
         <div class="architecture-layout">
 
@@ -271,29 +257,18 @@
             <div class="architecture-text">
 
                 <p>
-                    Ford IPC DocuAligner is designed around an agile, 
-                    event-driven desktop architecture that prioritizes rapid data parsing, 
-                    offline database synchronization, and local user-experience performance.
+                    <span class="en">Ford IPC DocuAligner is designed around an agile, event-driven desktop architecture that prioritizes rapid data parsing, offline database synchronization, and local user-experience performance.</span>
+                    <span class="es">Ford IPC DocuAligner está diseñado alrededor de una arquitectura ágil de escritorio orientada a eventos que prioriza el análisis rápido de datos, la sincronización offline de la base de datos y el rendimiento local de la experiencia de usuario.</span>
                 </p>
 
                 <p>
-                    The platform is built using a decoupled three-tier model:
-
-                        Presentation Layer (Flet/GUI): A clean, modern, reactive user interface developed in Flet (Flutter-for-Python),
-                         providing fast rendering, interactive file drag-and-drop, and real-time validation progress bars.
-
-                        Auditing & Logic Engine (Python Core): A multi-threaded parsing engine built with Python and Pandas that 
-                        processes massive configuration sheets, maps diagnostic schemas, and extracts image metadata.
-
-                        Local Database & Knowledge Layer: A relational mapping layer that indexes approved corporate design-freeze visual assets,
-                         DTC lists, and historic cluster schemas.
+                    <span class="en">The platform is built using a decoupled three-tier model: Presentation Layer (Flet/GUI), Auditing & Logic Engine (Python Core), and Local Database & Knowledge Layer.</span>
+                    <span class="es">La plataforma está construida con un modelo desacoplado de tres capas: capa de presentación (Flet/GUI), motor de auditoría y lógica (Python Core) y capa local de base de datos y conocimiento.</span>
                 </p>
 
                 <p>
-                    When a configuration file is loaded, the processing is offloaded to a background thread to prevent UI freezing. The auditing engine
-                     parses the rows, performs vectorized comparison lookups against the local DB, and returns a detailed discrepancy report. This decoupled 
-                     architecture allows the engineering team to easily update target visual folders or update the DTC mapping rules without requiring any 
-                     modifications to the core interface.
+                    <span class="en">When a configuration file is loaded, the processing is offloaded to a background thread to prevent UI freezing. The auditing engine parses the rows, performs vectorized comparison lookups against the local DB, and returns a detailed discrepancy report. This decoupled architecture allows the engineering team to easily update target visual folders or update the DTC mapping rules without requiring any modifications to the core interface.</span>
+                    <span class="es">Cuando se carga un archivo de configuración, el procesamiento se envía a un hilo en segundo plano para evitar que la interfaz se congele. El motor de auditoría analiza las filas, realiza búsquedas de comparación vectorizada contra la base de datos local y devuelve un informe detallado de discrepancias. Esta arquitectura desacoplada permite al equipo de ingeniería actualizar fácilmente las carpetas visuales objetivo o las reglas de mapeo de DTC sin requerir modificaciones en la interfaz principal.</span>
                 </p>
 
             </div>

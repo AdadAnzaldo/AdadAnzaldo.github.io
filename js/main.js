@@ -139,3 +139,32 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+// ==========================
+// LANGUAGE TOGGLE SWITCH
+// ==========================
+document.addEventListener("DOMContentLoaded", function () {
+    const langBtn = document.getElementById("lang-toggle-btn");
+    
+    if (langBtn) {
+        // 1. Revisar si el usuario ya había elegido un idioma antes
+        const currentLang = localStorage.getItem("portfolio-lang");
+        
+        if (currentLang === "es") {
+            document.body.classList.add("lang-es");
+            langBtn.textContent = "EN"; // Muestra la opción para volver a inglés
+        }
+
+        // 2. Escuchar el clic en el botón
+        langBtn.addEventListener("click", () => {
+            document.body.classList.toggle("lang-es");
+            
+            if (document.body.classList.contains("lang-es")) {
+                langBtn.textContent = "EN";
+                localStorage.setItem("portfolio-lang", "es");
+            } else {
+                langBtn.textContent = "ES";
+                localStorage.setItem("portfolio-lang", "en");
+            }
+        });
+    }
+});

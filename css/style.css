@@ -2147,3 +2147,39 @@ section h2 {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* ==========================
+   LANGUAGE SWITCHER LOGIC
+========================== */
+/* Ocultar español por defecto */
+body:not(.lang-es) .es {
+    display: none !important;
+}
+
+/* Ocultar inglés cuando el body tiene la clase lang-es */
+body.lang-es .en {
+    display: none !important;
+}
+
+/* ==========================
+   LANGUAGE BUTTON STYLES
+========================== */
+.lang-toggle-btn {
+    background: rgba(14, 165, 233, 0.1);
+    border: 1px solid var(--border-color); /* Usa tu variable existente */
+    color: var(--neon-cyan); /* Usa tu variable existente */
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.lang-toggle-btn:hover {
+    background: rgba(14, 165, 233, 0.2);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+    transform: translateY(-2px);
+}
