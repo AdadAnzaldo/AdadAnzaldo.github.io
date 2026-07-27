@@ -1831,7 +1831,9 @@ section h2 {
    
     
     .hamburger {
-        display: block; 
+        display: block; /* Asegura que el botón sea visible en móviles */
+        cursor: pointer;
+        z-index: 100;   /* Para que quede por encima de otros elementos */
     }
 
     
@@ -2272,7 +2274,12 @@ body.lang-es .en {
 
 .hamburger {
     display: none; 
-    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .hamburger {
+        display: block; 
+    }
 }
 
 .hamburger .bar {
