@@ -1884,9 +1884,30 @@ section h2 {
         gap: 15px;
     }
 
-    /* Altura más compacta en pantallas pequeñas */
+   
     :root {
         --nav-height: 56px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin-top: 15px; 
+    }
+
+   
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
     }
 
 
