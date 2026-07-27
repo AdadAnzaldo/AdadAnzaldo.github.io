@@ -1828,6 +1828,46 @@ section h2 {
 
 @media (max-width: 900px) {
 
+   
+    
+    .hamburger {
+        display: block; 
+    }
+
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    
+    .nav-links {
+        position: fixed;
+        left: -100%;
+        top: 70px; 
+        flex-direction: column;
+        background-color: #fff; 
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 20px 0;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    
+    .nav-links.active {
+        left: 0; 
+    }
+
     .hero {
 
         flex-direction: column-reverse;
@@ -2228,3 +2268,18 @@ body.lang-es .en {
     transform: translateY(-2px);
 }
 
+
+.hamburger {
+    display: none; 
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #333; 
+}
